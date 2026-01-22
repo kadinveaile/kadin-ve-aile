@@ -400,8 +400,43 @@ img{
 @media (max-width: 420px){
   .hero-image-card img{
     height: 210px;
+/* 1) Yatay taşmayı kökten engelle */
+html, body{
+  width: 100%;
+  overflow-x: hidden !important;
+}
+
+/* 2) Tüm görseller viewport dışına çıkmasın */
+img{
+  max-width: 100% !important;
+  height: auto;
+  display: block;
+}
+
+/* 3) Hero görsel kartı taşmasın */
+.hero-image-card{
+  width: 100%;
+  max-width: 100%;
+  overflow: hidden;
+}
+
+/* 4) Mobilde görseli sabit oranla göster (taşma olmaz) */
+.hero-image-card img{
+  width: 100% !important;
+  max-width: 100% !important;
+  height: auto;
+  aspect-ratio: 16 / 10;   /* İstersen 4/3 yapabiliriz */
+  object-fit: cover;
+}
+
+/* 5) Mobilde hero düzeni kesin tek kolona düşsün */
+@media (max-width: 920px){
+  .hero-split{
+    display: flex !important;
+    flex-direction: column !important;
   }
 }
+
 
 
 
