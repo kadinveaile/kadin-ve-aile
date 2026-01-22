@@ -4,7 +4,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Kadın ve Aile Çalışmaları Topluluğu</title>
-  <meta name="description" content="Kadın ve aile üzerine etkinlikler, podcastler ve kaynaklar." />
+  <meta name="description" content="Etkinlik duyuruları ve kadın/aile üzerine podcastler." />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
@@ -12,228 +12,79 @@
 
 <header class="header">
   <div class="container nav">
-    <a class="brand" href="index.html"><span class="sig"></span> Kadın & Aile</a>
-    <nav class="menu">
-      <a class="active" href="index.html">Ana Sayfa</a>
-      <a href="etkinlikler.html">Etkinlikler</a>
-      <a href="podcast.html">Podcast</a>
-      <a href="kaynaklar.html">Kaynaklar</a>
-      <a href="iletisim.html">İletişim</a>
+    <a class="brand" href="#top"><span class="sig"></span> Kadın & Aile</a>
+    <nav class="menu" aria-label="Menü">
+      <a href="#hakkimizda">Hakkımızda</a>
+      <a href="#etkinlikler">Etkinlikler</a>
+      <a href="#podcastler">Podcast</a>
+      <a href="#kaynaklar">Kaynaklar</a>
+      <a href="#iletisim">İletişim</a>
     </nav>
   </div>
 </header>
 
-<main>
+<main id="top">
   <section class="hero">
     <div class="container">
-      <div class="kicker"><span class="dot"></span> Topluluk Portalı</div>
       <span class="badge">✊ Feminist • Akademik • Dayanışma</span>
       <h1>Kadın ve Aile Çalışmaları<br><span class="grad">Topluluğu</span></h1>
       <p class="subtitle">
-        Etkinliklerimizi duyuruyor, kadın ve aile üzerine podcastler yayınlıyor,
-        kaynaklar paylaşıyoruz.
+        Kadın çalışmaları, toplumsal cinsiyet ve aile üzerine etkinlikler düzenliyor;
+        podcastlerle bilgi ve deneyimi paylaşıyoruz.
       </p>
 
-      <div class="toolbar">
-        <div class="chip">🎙️ <strong>Podcast</strong> arşivi</div>
-        <div class="chip">📅 <strong>Etkinlik</strong> takvimi</div>
-        <div class="chip">📚 <strong>Kaynak</strong> kütüphanesi</div>
-        <div class="chip">🤝 <strong>Gönüllü</strong> çağrısı</div>
-      </div>
-
       <div class="actions">
-        <a class="btn primary" href="etkinlikler.html">Etkinlikleri gör</a>
-        <a class="btn ghost" href="podcast.html">Podcast dinle</a>
-        <a class="btn ghost" href="kaynaklar.html">Kaynaklara bak</a>
+        <a class="btn primary" href="#etkinlikler">Etkinlikleri Gör</a>
+        <a class="btn ghost" href="#podcastler">Podcast Dinle</a>
+        <a class="btn ghost" href="#iletisim">İletişim</a>
       </div>
     </div>
   </section>
 
-  <section class="section alt">
+  <section id="hakkimizda" class="section">
     <div class="container">
       <div class="section-head">
-        <h2>Bu Ay Öne Çıkanlar</h2>
-        <p>Hızlı erişim: 1 etkinlik • 1 podcast • 1 kaynak</p>
+        <h2>Hakkımızda</h2>
+        <p>Topluluk olarak hedefimiz</p>
+      </div>
+
+      <div class="grid-2">
+        <div class="card">
+          <h3>Misyon</h3>
+          <p>
+            Toplumsal cinsiyet eşitliği, kadın hakları ve aile politikaları alanında
+            bilgi üretimini ve farkındalığı artırmak; güvenli bir paylaşım ve öğrenme alanı oluşturmak.
+          </p>
+        </div>
+        <div class="card">
+          <h3>Ne yapıyoruz?</h3>
+          <ul class="list">
+            <li>Panel, söyleşi, atölye ve okuma grupları</li>
+            <li>Online etkinlik duyuruları ve kayıt yönlendirmeleri</li>
+            <li>Kadın ve aile üzerine podcast yayınları</li>
+            <li>Kaynak önerileri ve faydalı bağlantılar</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="etkinlikler" class="section alt">
+    <div class="container">
+      <div class="section-head">
+        <h2>Etkinlikler</h2>
+        <p>Güncel duyurular (örnek — düzenleyebilirsiniz)</p>
       </div>
 
       <div class="grid-3">
-        <div class="card">
-          <h3>🌙 Panel: Kadın Emeği</h3>
-          <p>Bakım emeği, görünmeyen iş, dayanışma pratikleri.</p>
+        <article class="card">
+          <h3>📌 Panel: Kadın Emeği ve Görünmeyen İş</h3>
+          <p>Bakım emeği, ücretli/ücretsiz emek ve görünürlük üzerine konuşma.</p>
           <div class="meta">
             <span class="pill">Online</span>
             <span class="date">20 Mart 2026</span>
           </div>
-          <div class="card-footer">
-            <a class="link" href="etkinlikler.html">Tüm etkinlikler →</a>
-            <span class="pill">Yeni</span>
-          </div>
-        </div>
+          <a class="link" href="#">Kayıt linki ekle →</a>
+        </article>
 
-        <div class="card">
-          <h3>🎧 Yeni Bölüm</h3>
-          <p><strong>Bölüm 2:</strong> Aile Kavramı ve Dönüşüm</p>
-          <div class="kv">
-            <span>Konuk: —</span><span>Süre: 22 dk</span><span>Tarih: 2026</span>
-          </div>
-          <div class="card-footer">
-            <a class="link" href="podcast.html">Dinle →</a>
-            <span class="pill">Podcast</span>
-          </div>
-        </div>
-
-        <div class="card">
-          <h3>📚 Seçki</h3>
-          <p>Toplumsal Cinsiyet 101 — okuma listesi + kısa notlar.</p>
-          <div class="card-footer">
-            <a class="link" href="kaynaklar.html">Kaynaklara git →</a>
-            <span class="pill">Kütüphane</span>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="section">
-    <div class="container split">
-      <div>
-        <div class="section-head">
-          <h2>Yaklaşan Etkinlik Takvimi</h2>
-          <p>Mini takvim görünümü (güncellemesi kolay)</p>
-        </div>
-
-        <div class="card">
-          <div class="agenda">
-            <div class="agenda-row">
-              <div class="agenda-date"><div class="d">20</div><div class="m">Mar</div></div>
-              <div class="agenda-info">
-                <div class="t">Panel: Kadın Emeği ve Görünmeyen İş</div>
-                <div class="small">Online • 20:00 • Kayıt: link ekleyin</div>
-              </div>
-              <div class="agenda-tag pill">Panel</div>
-            </div>
-
-            <div class="agenda-row">
-              <div class="agenda-date"><div class="d">05</div><div class="m">Nis</div></div>
-              <div class="agenda-info">
-                <div class="t">Söyleşi: Medyada Toplumsal Cinsiyet</div>
-                <div class="small">Zoom • 19:30 • Duyuru: link</div>
-              </div>
-              <div class="agenda-tag pill">Söyleşi</div>
-            </div>
-
-            <div class="agenda-row">
-              <div class="agenda-date"><div class="d">18</div><div class="m">Nis</div></div>
-              <div class="agenda-info">
-                <div class="t">Atölye: Feminist Araştırma Yöntemleri</div>
-                <div class="small">Online • 18:00 • Kontenjan sınırlı</div>
-              </div>
-              <div class="agenda-tag pill">Atölye</div>
-            </div>
-          </div>
-
-          <hr class="hr">
-          <a class="link" href="etkinlikler.html">Etkinlik sayfasına git →</a>
-        </div>
-      </div>
-
-      <div>
-        <div class="section-head">
-          <h2>Son Podcastler</h2>
-          <p>Son eklenen bölümler</p>
-        </div>
-
-        <div class="card">
-          <h3>Bölüm 1: Feminizme Giriş</h3>
-          <p class="small">Kavramlar, tarihçe, yaklaşımlar.</p>
-          <audio controls><source src="podcast1.mp3" type="audio/mpeg"></audio>
-          <hr class="hr">
-          <h3>Bölüm 2: Aile ve Dönüşüm</h3>
-          <p class="small">Aile yapıları, roller, dönüşen dinamikler.</p>
-          <audio controls><source src="podcast2.mp3" type="audio/mpeg"></audio>
-          <div class="card-footer">
-            <a class="link" href="podcast.html">Tüm bölümler →</a>
-            <span class="pill">Arşiv</span>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="section alt">
-    <div class="container">
-      <div class="section-head">
-        <h2>Son Eklenen Kaynaklar</h2>
-        <p>Kütüphane görünümü (PDF/link ekleyebilirsiniz)</p>
-      </div>
-
-      <div class="card">
-        <div class="library">
-          <div class="lib-item">
-            <div class="lib-ico">📄</div>
-            <div class="lib-body">
-              <div class="title">Toplumsal Cinsiyet: Temel Kavramlar</div>
-              <div class="desc">Kısa özet + yönlendirici okuma listesi. (Link/PDF eklenebilir)</div>
-            </div>
-          </div>
-
-          <div class="lib-item">
-            <div class="lib-ico">🔗</div>
-            <div class="lib-body">
-              <div class="title">Kadın Emeği Üzerine Seçki</div>
-              <div class="desc">Makaleler, raporlar, podcast önerileri.</div>
-            </div>
-          </div>
-
-          <div class="lib-item">
-            <div class="lib-ico">📚</div>
-            <div class="lib-body">
-              <div class="title">Aile Politikaları ve Sosyal Devlet</div>
-              <div class="desc">Temel kaynaklar + tartışma başlıkları.</div>
-            </div>
-          </div>
-        </div>
-
-        <div class="card-footer">
-          <a class="link" href="kaynaklar.html">Kaynaklar sayfası →</a>
-          <span class="pill">Güncel</span>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="section">
-    <div class="container">
-      <div class="section-head">
-        <h2>Ekip & Çalışma Alanları</h2>
-        <p>Topluluğun aktif ve organize görünmesi için</p>
-      </div>
-
-      <div class="grid-3">
-        <div class="card"><h3>🤝 Koordinasyon</h3><p>Planlama, işbirlikleri, duyurular.</p></div>
-        <div class="card"><h3>🎤 Podcast Ekibi</h3><p>Konu seçimi, kayıt, kurgu, yayın takvimi.</p></div>
-        <div class="card"><h3>📚 Kaynak & İçerik</h3><p>Okuma listeleri, rehberler, özetler.</p></div>
-      </div>
-
-      <div class="card" style="margin-top:14px;">
-        <h3>Katılmak ister misin?</h3>
-        <p class="subtitle" style="margin:0">Gönüllü olmak için iletişim sayfasından ulaşabilirsiniz.</p>
-        <div class="actions" style="margin-top:14px;">
-          <a class="btn primary" href="iletisim.html">İletişime geç</a>
-          <a class="btn ghost" href="etkinlikler.html">Etkinlikleri incele</a>
-        </div>
-      </div>
-    </div>
-  </section>
-</main>
-
-<footer class="footer">
-  <div class="container footer-inner">
-    <p>© <span id="year"></span> Kadın ve Aile Çalışmaları Topluluğu</p>
-    <div><a href="link.html">Link in bio</a></div>
-  </div>
-</footer>
-
-<script src="script.js"></script>
-</body>
-</html>
+        <article clas
