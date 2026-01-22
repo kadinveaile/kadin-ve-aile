@@ -1,22 +1,26 @@
-:root{
-  --bg0:#05040f;
-  --bg1:#0b0820;
+:root{:root{
+  --bg0:#070510;
+  --bg1:#120b24;
+
   --ink:rgba(255,255,255,.92);
-  --muted:rgba(255,255,255,.72);
+  --muted:rgba(255,255,255,.70);
 
-  --violet:#b44cff;
-  --magenta:#ff4fd8;
-  --rose:#ff7aa8;
-  --aqua:#59f2ff;
-  --gold:#ffd36a;
+  /* yeni palet */
+  --violet:#9b6cff;     /* daha yumuşak mor */
+  --magenta:#ff6aa9;    /* pembe-mürdüm */
+  --rose:#ff9fbf;       /* açık vurgu */
+  --aqua:#6fe7ff;       /* daha pastel */
+  --gold:#f2c46d;       /* bakır-altın */
 
-  --glass: rgba(255,255,255,.07);
-  --line: rgba(255,255,255,.14);
+  --glass: rgba(255,255,255,.06);
+  --line: rgba(255,255,255,.12);
 
-  --r:22px;
-  --r2:30px;
-  --shadow: 0 18px 60px rgba(0,0,0,.45);
+  --r:26px;
+  --r2:34px;
+  --shadow: 0 22px 70px rgba(0,0,0,.45);
   --max:1120px;
+}
+
 }
 
 *{box-sizing:border-box}
@@ -385,6 +389,7 @@ audio{ width:100%; margin-top:10px; filter: drop-shadow(0 14px 30px rgba(0,0,0,.
 }
 .lib-body .title{ font-weight: 900; }
 .lib-body .desc{ color: rgba(255,255,255,.72); line-height:1.55; margin-top:2px; }
+
 
 
 
