@@ -404,7 +404,27 @@ audio{ width:100%; margin-top:10px; filter: drop-shadow(0 14px 30px rgba(0,0,0,.
   font-weight: 900;
 }
 .lib-body .title{ font-weight: 900; }
-.lib-body .desc{ color: rgba(255,255,255,.72); line-height:1.55; margin-top:2px; }
+.lib-body .desc{ color: rgba(255,255,255,.72); line-height:1.55; margin-top:2px; 
+.section-head h2{
+  position: relative;
+  padding-left: 18px;
+}
+
+.section-head h2::before{
+  content:"";
+  position:absolute;
+  left:0;
+  top:50%;
+  transform:translateY(-50%);
+  width:6px;
+  height:70%;
+  border-radius:10px;
+  background: linear-gradient(
+    180deg,
+    var(--magenta),
+    var(--gold)
+  );}
+
 
 
 
