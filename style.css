@@ -423,7 +423,21 @@ audio{ width:100%; margin-top:10px; filter: drop-shadow(0 14px 30px rgba(0,0,0,.
     180deg,
     var(--magenta),
     var(--gold)
-  );}
+  );
+  .section.alt{
+  position: relative;
+}
+
+.section.alt::after{
+  content:"✦ ✦ ✦";
+  display:block;
+  text-align:center;
+  margin-top:40px;
+  color: rgba(255,255,255,.35);
+  letter-spacing:6px;
+}
+
+
 
 
 
