@@ -249,6 +249,143 @@ audio{ width:100%; margin-top:10px; filter: drop-shadow(0 14px 30px rgba(0,0,0,.
 .agenda-date .m{ font-size: 11px; color: rgba(255,255,255,.72); margin-top:2px; }
 
 .agenda-info .t{ font-weight: 900; }
+.agenda-tag{ margin-left:auto; 
+/* --- Dolu görünüm: ikonlu başlık, küçük açıklama, araç çubuğu, rozetler --- */
+.kicker{
+  display:flex;
+  align-items:center;
+  gap:10px;
+  color: rgba(255,255,255,.78);
+  font-weight: 900;
+  letter-spacing: .2px;
+  margin-bottom: 10px;
+}
+.kicker .dot{
+  width:10px;height:10px;border-radius:999px;
+  background: linear-gradient(135deg, var(--violet), var(--magenta), var(--aqua));
+  box-shadow: 0 0 18px rgba(255,79,216,.25);
+}
+.toolbar{
+  display:flex;
+  gap:10px;
+  flex-wrap: wrap;
+  align-items:center;
+  margin-top: 12px;
+}
+.chip{
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  padding: 8px 12px;
+  border-radius: 999px;
+  border: 1px solid rgba(255,255,255,.12);
+  background: rgba(255,255,255,.05);
+  color: rgba(255,255,255,.86);
+  font-weight: 900;
+  font-size: 12px;
+  cursor: default;
+}
+.chip strong{ color: rgba(255,211,106,.95); }
+
+.split{
+  display:grid;
+  grid-template-columns: 1.05fr .95fr;
+  gap: 14px;
+  align-items: start;
+}
+@media (max-width: 920px){ .split{ grid-template-columns: 1fr; } }
+
+.agenda{
+  display:flex;
+  flex-direction:column;
+  gap: 10px;
+}
+.agenda-row{
+  display:flex;
+  gap: 14px;
+  align-items:center;
+  padding: 12px 12px;
+  border-radius: 18px;
+  border: 1px solid rgba(255,255,255,.10);
+  background: rgba(255,255,255,.04);
+}
+.agenda-date{
+  width: 56px;
+  min-width: 56px;
+  height: 56px;
+  border-radius: 18px;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+  border: 1px solid rgba(255,255,255,.12);
+  background: linear-gradient(135deg, rgba(180,76,255,.14), rgba(255,79,216,.10));
+}
+.agenda-date .d{ font-size: 18px; font-weight: 900; line-height:1; }
+.agenda-date .m{ font-size: 11px; color: rgba(255,255,255,.72); margin-top:2px; }
+.agenda-info .t{ font-weight: 900; }
 .agenda-tag{ margin-left:auto; }
+
+.hr{
+  height:1px;
+  background: rgba(255,255,255,.10);
+  margin: 12px 0;
+  border: 0;
+}
+
+.kv{
+  display:flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-top: 10px;
+}
+.kv span{
+  padding: 6px 10px;
+  border-radius: 999px;
+  border: 1px solid rgba(255,255,255,.12);
+  background: rgba(255,255,255,.05);
+  font-weight: 900;
+  font-size: 12px;
+  color: rgba(255,255,255,.82);
+}
+
+/* Kart içinde küçük “footer” */
+.card-footer{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  gap: 10px;
+  margin-top: 12px;
+  flex-wrap: wrap;
+}
+.card-footer .link{ margin-top: 0; }
+
+/* Liste kütüphanesi */
+.library{
+  display:flex;
+  flex-direction:column;
+  gap: 10px;
+}
+.lib-item{
+  display:flex;
+  gap: 12px;
+  align-items:flex-start;
+  padding: 12px;
+  border-radius: 18px;
+  border: 1px solid rgba(255,255,255,.10);
+  background: rgba(255,255,255,.04);
+}
+.lib-ico{
+  width: 44px; min-width:44px; height:44px;
+  border-radius: 16px;
+  border: 1px solid rgba(255,255,255,.12);
+  background: linear-gradient(135deg, rgba(255,211,106,.18), rgba(89,242,255,.10));
+  display:flex; align-items:center; justify-content:center;
+  font-weight: 900;
+}
+.lib-body .title{ font-weight: 900; }
+.lib-body .desc{ color: rgba(255,255,255,.72); line-height:1.55; margin-top:2px; }
+
+
 
 
