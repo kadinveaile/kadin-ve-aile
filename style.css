@@ -217,4 +217,38 @@ audio{ width:100%; margin-top:10px; filter: drop-shadow(0 14px 30px rgba(0,0,0,.
 @media (max-width: 920px){
   .grid-3{ grid-template-columns: 1fr; }
   .grid-2{ grid-template-columns: 1fr; }
+.agenda{
+  display:flex;
+  flex-direction:column;
+  gap: 10px;
 }
+
+.agenda-row{
+  display:flex;
+  gap: 14px;
+  align-items:center;
+  padding: 12px 12px;
+  border-radius: 18px;
+  border: 1px solid rgba(255,255,255,.10);
+  background: rgba(255,255,255,.04);
+}
+
+.agenda-date{
+  width: 56px;
+  min-width: 56px;
+  height: 56px;
+  border-radius: 18px;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+  border: 1px solid rgba(255,255,255,.12);
+  background: linear-gradient(135deg, rgba(180,76,255,.14), rgba(255,79,216,.10));
+}
+.agenda-date .d{ font-size: 18px; font-weight: 900; line-height:1; }
+.agenda-date .m{ font-size: 11px; color: rgba(255,255,255,.72); margin-top:2px; }
+
+.agenda-info .t{ font-weight: 900; }
+.agenda-tag{ margin-left:auto; }
+
+
