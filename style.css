@@ -140,10 +140,19 @@ h1{
   transition: transform .08s ease, box-shadow .18s ease, background .18s ease, border-color .18s ease;
 }
 .btn:hover{ transform: translateY(-1px); }
-.btn.primary{
-  border-color: rgba(255,79,216,.28);
-  background: linear-gradient(135deg, rgba(180,76,255,.85), rgba(255,79,216,.72), rgba(89,242,255,.35));
-  box-shadow: 0 22px 70px rgba(255,79,216,.12);
+.btn.primary{.btn.primary{
+  border: none;
+  background: linear-gradient(
+    135deg,
+    var(--violet),
+    var(--magenta),
+    var(--gold)
+  );
+  box-shadow:
+    0 10px 30px rgba(255,106,169,.25),
+    inset 0 0 0 1px rgba(255,255,255,.25);
+}
+
 }
 .btn.ghost{ background: rgba(255,255,255,.06); }
 
@@ -396,6 +405,7 @@ audio{ width:100%; margin-top:10px; filter: drop-shadow(0 14px 30px rgba(0,0,0,.
 }
 .lib-body .title{ font-weight: 900; }
 .lib-body .desc{ color: rgba(255,255,255,.72); line-height:1.55; margin-top:2px; }
+
 
 
 
