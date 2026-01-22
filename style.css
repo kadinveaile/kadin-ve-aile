@@ -165,6 +165,13 @@ h1{
   padding:18px;
   box-shadow: var(--shadow);
   overflow:hidden;
+  .card{
+  transition: transform .25s ease, box-shadow .25s ease;
+}
+
+.card:hover{
+  transform: translateY(-4px) scale(1.01);
+  box-shadow: 0 28px 80px rgba(0,0,0,.55);
 }
 .card::before{
   content:"";
@@ -389,6 +396,7 @@ audio{ width:100%; margin-top:10px; filter: drop-shadow(0 14px 30px rgba(0,0,0,.
 }
 .lib-body .title{ font-weight: 900; }
 .lib-body .desc{ color: rgba(255,255,255,.72); line-height:1.55; margin-top:2px; }
+
 
 
 
