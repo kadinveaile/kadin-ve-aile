@@ -326,6 +326,50 @@ audio{ width:100%; margin-top:10px; filter: drop-shadow(0 14px 30px rgba(0,0,0,.
 .header > *{
   position: relative;
   z-index:1;
+.manifesto{
+  position: relative;
+  margin: 32px 0;
+  border-radius: var(--r2);
+  overflow: hidden;
+  box-shadow: var(--shadow);
 }
+
+.manifesto img{
+  width:100%;
+  height: 380px;
+  object-fit: cover;
+  filter: saturate(0.95) contrast(0.95);
+}
+
+.manifesto-text{
+  position:absolute;
+  inset:0;
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 32px;
+  background: linear-gradient(
+    180deg,
+    rgba(5,4,15,.15),
+    rgba(5,4,15,.55)
+  );
+}
+
+.manifesto-text h2{
+  margin:0 0 8px;
+  font-size: 32px;
+}
+
+.manifesto-text p{
+  max-width: 60ch;
+  color: rgba(255,255,255,.85);
+  font-size: 16px;
+}
+
+@media (max-width: 720px){
+  .manifesto img{ height: 280px; }
+  .manifesto-text h2{ font-size: 24px; }
+}
+
 
 
