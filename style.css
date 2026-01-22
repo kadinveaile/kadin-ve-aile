@@ -159,9 +159,15 @@ h1{
 
 .section{ padding:56px 0; }
 .section.alt{
-  background: linear-gradient(180deg, rgba(255,255,255,.03), rgba(255,255,255,.01));
-  border-top:1px solid rgba(255,255,255,.06);
-  border-bottom:1px solid rgba(255,255,255,.06);
+  background: linear-gradient(
+    180deg,
+    rgba(255,255,255,.015),
+    rgba(255,255,255,.005)
+  );
+  border-top: 1px solid rgba(255,255,255,.06);
+  border-bottom: 1px solid rgba(255,255,255,.06);
+}
+
 }
 
 .grid-3{ display:grid; grid-template-columns: repeat(3, 1fr); gap:14px; }
@@ -438,6 +444,7 @@ audio{ width:100%; margin-top:10px; filter: drop-shadow(0 14px 30px rgba(0,0,0,.
   color: rgba(255,255,255,.35);
   letter-spacing:6px;
 }
+
 
 
 
