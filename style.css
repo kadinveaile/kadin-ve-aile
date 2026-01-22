@@ -369,7 +369,40 @@ audio{ width:100%; margin-top:10px; filter: drop-shadow(0 14px 30px rgba(0,0,0,.
 @media (max-width: 720px){
   .manifesto img{ height: 280px; }
   .manifesto-text h2{ font-size: 24px; }
+/* Mobilde görsel taşmasını kesin engelle */
+img{
+  max-width: 100%;
+  height: auto;
+  display: block;
 }
+
+/* Hero görsel kartı mobil uyum */
+.hero-image-card{
+  width: 100%;
+  overflow: hidden;
+}
+
+.hero-image-card img{
+  width: 100%;
+  height: 260px;        /* mobilde sabit, taşma yok */
+  object-fit: cover;    /* kırp, taşma yapma */
+  border-radius: 0;     /* kart zaten yuvarlak */
+}
+
+/* Mobilde hero split tek kolona düşsün */
+@media (max-width: 920px){
+  .hero-split{
+    grid-template-columns: 1fr !important;
+  }
+}
+
+/* Çok küçük ekranlarda daha da kısalt */
+@media (max-width: 420px){
+  .hero-image-card img{
+    height: 210px;
+  }
+}
+
 
 
 
