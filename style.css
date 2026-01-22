@@ -1,0 +1,105 @@
+/* --- İÇ SAYFA ÖZEL TASARIMLARI --- */
+
+/* Genel Sayfa Başlıkları */
+.page-header {
+    text-align: center;
+    padding: 60px 20px;
+    background: linear-gradient(to bottom, #2E1A47, #4B367C); /* Mor gradyan */
+    border-bottom: 2px solid var(--gold-color);
+}
+
+.page-header h1 {
+    font-size: 2.5rem;
+    color: var(--gold-color);
+}
+
+.container {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+/* Etkinlik Listesi */
+.event-item {
+    background-color: rgba(75, 54, 124, 0.6); /* Yarı saydam mor */
+    border-left: 5px solid var(--accent-color); /* Yeşil Çizgi */
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 0 10px 10px 0;
+    transition: transform 0.3s;
+}
+
+.event-item:hover {
+    transform: translateX(10px);
+    background-color: rgba(75, 54, 124, 0.9);
+}
+
+.date-badge {
+    background-color: var(--accent-color);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 15px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+/* Podcast Player */
+.episode {
+    background: #201035;
+    padding: 20px;
+    border-radius: 15px;
+    border: 1px solid var(--gold-color);
+    margin-bottom: 25px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.play-btn {
+    font-size: 2rem;
+    color: var(--accent-color);
+    cursor: pointer;
+    transition: text-shadow 0.3s;
+}
+
+.play-btn:hover {
+    text-shadow: 0 0 15px var(--accent-color);
+}
+
+/* Formlar (Öneri & İletişim) */
+.magic-form {
+    background-color: #201035;
+    padding: 30px;
+    border-radius: 15px;
+    border: 1px solid rgba(255, 215, 0, 0.3);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    color: var(--gold-color);
+    font-family: 'Cinzel', serif;
+}
+
+.form-group input, .form-group textarea {
+    width: 100%;
+    padding: 12px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 1px solid #4B367C;
+    border-radius: 5px;
+    color: #fff;
+    font-family: 'Lato', sans-serif;
+}
+
+.form-group input:focus, .form-group textarea:focus {
+    outline: none;
+    border-color: var(--accent-color);
+    background-color: rgba(255, 255, 255, 0.15);
+}
