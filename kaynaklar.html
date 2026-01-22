@@ -4,6 +4,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Kaynaklar • Kadın & Aile</title>
+  <meta name="description" content="Okuma listeleri, rehberler ve seçkiler." />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
@@ -25,29 +26,114 @@
 <main>
   <section class="hero">
     <div class="container">
-      <span class="badge">📚 Okuma & Rehber</span>
+      <div class="kicker"><span class="dot"></span> Kaynak Kütüphanesi</div>
+      <span class="badge">📚 Okuma • Rehber • Seçki</span>
       <h1><span class="grad">Kaynaklar</span></h1>
-      <p class="subtitle">Toplulukça önerdiğimiz seçkiler (örnek).</p>
+      <p class="subtitle">Buraya PDF, bağlantı, kitap önerisi ve kısa notlar ekleyebilirsiniz.</p>
+
+      <div class="toolbar">
+        <div class="chip">Kategori: <strong>Kuram</strong></div>
+        <div class="chip">Kategori: <strong>Emek</strong></div>
+        <div class="chip">Kategori: <strong>Aile</strong></div>
+        <div class="chip">Kategori: <strong>Hukuk</strong></div>
+      </div>
     </div>
   </section>
 
   <section class="section">
-    <div class="container grid-2">
+    <div class="container split">
       <div class="card">
-        <h3>Okuma Listesi</h3>
-        <ul class="list">
-          <li>Toplumsal cinsiyet kuramına giriş</li>
-          <li>Türkiye’de kadın hareketleri</li>
-          <li>Aile politikaları ve sosyal devlet</li>
-        </ul>
+        <h3>Öne Çıkan Seçki</h3>
+        <p class="subtitle" style="margin:0">Toplumsal Cinsiyet 101 — başlangıç paketi</p>
+        <div class="kv">
+          <span>Okuma</span><span>Kısa özet</span><span>Podcast önerisi</span>
+        </div>
+        <hr class="hr">
+        <div class="library">
+          <div class="lib-item">
+            <div class="lib-ico">📄</div>
+            <div class="lib-body">
+              <div class="title">Temel Kavramlar</div>
+              <div class="desc">Cinsiyet/toplumsal cinsiyet, patriyarka, kesişimsellik.</div>
+            </div>
+          </div>
+          <div class="lib-item">
+            <div class="lib-ico">🔗</div>
+            <div class="lib-body">
+              <div class="title">Okuma Listesi</div>
+              <div class="desc">Makale ve kitap seçkisi (linkleri buraya koyun).</div>
+            </div>
+          </div>
+        </div>
       </div>
+
       <div class="card">
         <h3>Rehberler</h3>
-        <ul class="list">
-          <li>Etkinlik güvenliği / kapsayıcılık ilkeleri</li>
-          <li>Destek hatları ve yönlendirmeler</li>
-          <li>Akademik yazımda etik</li>
-        </ul>
+        <p class="subtitle" style="margin:0">Etkinlik güvenliği ve kapsayıcılık</p>
+        <hr class="hr">
+        <div class="library">
+          <div class="lib-item">
+            <div class="lib-ico">✅</div>
+            <div class="lib-body">
+              <div class="title">Kapsayıcılık İlkeleri</div>
+              <div class="desc">Dil, erişilebilirlik, güvenli alan yaklaşımı.</div>
+            </div>
+          </div>
+          <div class="lib-item">
+            <div class="lib-ico">🧭</div>
+            <div class="lib-body">
+              <div class="title">Yönlendirme Listesi</div>
+              <div class="desc">Destek hatları / kurumlar / danışmanlık (uygunsa).</div>
+            </div>
+          </div>
+          <div class="lib-item">
+            <div class="lib-ico">📝</div>
+            <div class="lib-body">
+              <div class="title">Etik Notlar</div>
+              <div class="desc">Görsel/ses kullanımı, izinler, alıntılama.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section alt">
+    <div class="container">
+      <div class="section-head">
+        <h2>Kaynak Arşivi</h2>
+        <p>Daha çok madde ekleyerek sayfayı zenginleştirebilirsiniz</p>
+      </div>
+
+      <div class="card">
+        <div class="library">
+          <div class="lib-item">
+            <div class="lib-ico">📚</div>
+            <div class="lib-body">
+              <div class="title">Kadın Emeği Üzerine Seçki</div>
+              <div class="desc">Bakım emeği, ücretli/ücretsiz emek, görünmeyen iş.</div>
+            </div>
+          </div>
+          <div class="lib-item">
+            <div class="lib-ico">⚖️</div>
+            <div class="lib-body">
+              <div class="title">Haklar ve Başvuru Yolları</div>
+              <div class="desc">Genel bilgilendirme (yerel mevzuata göre güncelleyin).</div>
+            </div>
+          </div>
+          <div class="lib-item">
+            <div class="lib-ico">🧠</div>
+            <div class="lib-body">
+              <div class="title">Feminist Araştırma Yöntemleri</div>
+              <div class="desc">Nitel yöntem, etik, saha çalışması notları.</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card-footer">
+          <span class="pill">Güncellemesi kolay</span>
+          <a class="link" href="iletisim.html">Öneri gönder →</a>
+        </div>
       </div>
     </div>
   </section>
@@ -56,7 +142,7 @@
 <footer class="footer">
   <div class="container footer-inner">
     <p>© <span id="year"></span> Kadın ve Aile Çalışmaları Topluluğu</p>
-    <div><a href="index.html">Ana Sayfa</a></div>
+    <div><a href="link.html">Link in bio</a></div>
   </div>
 </footer>
 
